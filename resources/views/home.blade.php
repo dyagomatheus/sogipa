@@ -63,7 +63,7 @@ g) Título de Eleitor e comprovante de votação, se maior de 18 anos <u>(copia 
 h) Certificado de Reservista, se candidato do sexo masculino <u>(copia e original)</u><br>
 
 <b>Obs.:</b> Se candidato menor de 18 anos, apresentar-se acompanhado do responsável, munido dos originais e cópias do RG e CPF e comprovante de residência do responsável.</font></p>
-                    @elseif(auth()->user()->essay->time_left <= 0 && auth()->user()->essay->status == true)
+                    @elseif(auth()->user()->essay && auth()->user()->essay->time_left <= 0 && auth()->user()->essay->status == true)
                     <h5>Desculpe! Seu tempo de prova terminou e você não concluiu.</h5>
                     @else
                     <a href="{{route('initAvaliation')}}" class="btn btn-primary">Fazer Avaliação</a>
