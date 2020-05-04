@@ -33,14 +33,6 @@
     
     
     <p style="color: #ff2e34; text-align: right;"><b>Seu tempo para concluir a prova é de 2 horas</b></p>
-    <div id="tempo"></div>
-    <div class="col-md-4 text-center" style="background: #ff2e34; float: right; width: 250px;">
-    <p style="color: #fff; font-size: 25px; margin-bottom: 0px">
-    <span id="timer_horas">02</span> :
-    <span id="timer_minutos">00</span> :
-    <span id="timer_segundos">00</span>
-    </p>
-    </div>
     
     <br><br>								
     

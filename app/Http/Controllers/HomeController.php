@@ -86,7 +86,7 @@ class HomeController extends Controller
         $essay = Essay::where('user_id', auth()->user()->id)->first();
         $essay->essay = $request->essay;
         $essay->text = $request->theme;
-        $essay->status = $request->false;
+        $essay->status = false;
 
         $essay->save();
 

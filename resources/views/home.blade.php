@@ -5,7 +5,13 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">
+                    @if (auth()->user()->essay)
+                        Prova finalizada com sucesso
+                    @else
+                        Prova
+                    @endif
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,9 +20,7 @@
                         </div>
                     @endif
                     @if (auth()->user()->essay)
-                    <div class="alert-success">
-                        <h2>OPROVA FINALIZADA COM SUCESSO!</h2>
-                    </div>
+                        <h5>eja informações abaixo</h5>
                     <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INSTRUÇÕES PARA MATRICULA DOS CLASSIFICADOS NO PROCESSO SELETIVO 2020/2</font></b></p>
 
 
@@ -48,7 +52,7 @@
 
 <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">DOCUMENTOS PARA MATRÍCULA</font></b><br>
 <font color="#000">A documentação necessária para efetivar a matrícula é o documento <b>ORIGINAL e a CÓPIA SIMPLES DE</b>:
-
+<br>
 a) 01 (uma) foto 3x4 <b>recente</b><br>
 b) Cédula de Identidade (RG) <u>(copia e original)</u><br>
 c) CPF <u>(copia e original)</u><br>
