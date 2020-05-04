@@ -28,4 +28,13 @@ class StoreEssay extends FormRequest
             'theme' => 'required',
         ];
     }
+    public function messages()
+    {
+        return [
+            'essay.required' => 'Por favor digite sua redação.',
+            'essay.max'  => 'Sua redação deve conter no máximo 5000 caracters. Se você utilizou algum estilização de texto, REMOVA!',
+            'essay.min'  => 'Sua redação deve conter no máximo 1000 caracters',
+            'theme.required'  => 'Por favor informe sobre que texto que você fez a redação.',
+        ];
+    }
 }

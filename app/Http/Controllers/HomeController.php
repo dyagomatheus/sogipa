@@ -90,9 +90,7 @@ class HomeController extends Controller
 
         $essay->save();
 
-        return \PDF::loadView('essay.pdf', compact('essay'))
-                // Se quiser que fique no formato a4 retrato: ->setPaper('a4', 'landscape')
-                ->stream('redacao.pdf');
+        return view('home');
     }
 
     public function show($id)
