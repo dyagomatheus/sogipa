@@ -44,7 +44,7 @@ class HomeController extends Controller
             $essay->time_left = $essay->time_left - $diff;
             $essay->save();
             return view('essay.create', compact('essay'));
-        }elseif(!$essay){
+        }elseif(!$essay || $essay->time_left <= 0){
             return view('home');
         }
     }
@@ -83,6 +83,20 @@ class HomeController extends Controller
 
     public function store(StoreEssay $request)
     {
+        $text = strip_tags($request->essay);
+        $count = strlen($text);
+        if($count < 1000){
+            \Session::put('essay', $request->essay);
+            \Session::put('theme', $request->theme);
+
+            return redirect()->back()->with('error', 'Sua redação deve ter entre 1000 e 5000 Caracteres. Você digitou '. $count);
+        }elseif($count > 5000){
+            \Session::put('essay', $request->essay);
+            \Session::put('theme', $request->theme);
+
+            return redirect()->back()->with('error', 'Sua redação deve ter entre 1000 e 5000 Caracteres. Você digitou '. $count);
+        }
+
         $essay = Essay::where('user_id', auth()->user()->id)->first();
         $essay->essay = $request->essay;
         $essay->text = $request->theme;

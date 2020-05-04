@@ -25,6 +25,12 @@
                             </ul>
                         </div>
                     @endif
+                    @if(Session::has("error"))
+                        <div class="alert alert-danger"><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                            <strong>Ops!</strong>
+                           {{ Session::get("error") }}
+                        </div>
+                    @endif
                     <div class="collapse" id="collapseExample">
                         <div class="card card-body">
                             @include('essay.instruction')
@@ -56,15 +62,17 @@
                 <div id="editor">
                     <form name=myform action="{{route('essay.store')}}" method="POST">
                         @csrf
-                        <div class="form-group col-6">
-                            <select name="theme" id="theme" class="form-control" required>
-                                <option value="" disabled selected>ECOLHA SOBRE QUAL TEXTO VOCÊ FARÁ A REDAÇÃO</option>
-                                <option value="TEXTO 01">TEXTO 1</option>
-                                <option value="TEXTO 02">TEXTO 2</option>
-    
-                            </select>
-                        </div>
-                        <textarea id="froala-editor"  cols=28 rows=4 name="essay"><p><strong><span style="color: rgb(226, 80, 65);">Escreva aqui sua reda&ccedil;&atilde;o</span></strong></p></textarea>
+                            <div class="form-group col-6 mt-2">
+                                <select name="theme" id="theme" class="form-control" required>
+                                    <option value="" disabled selected>ECOLHA SOBRE QUAL TEXTO VOCÊ FARÁ A REDAÇÃO</option>
+                                    <option value="TEXTO 1 - Cuidados com a saúde podem melhorar a vida" {{ Session::get('theme') ==  'TEXTO 1 - Cuidados com a saúde podem melhorar a vida' ? 'selected' : ''}}>TEXTO 1 - Cuidados com a saúde podem melhorar a vida </option>
+                                    <option value="TEXTO 2 - O sedentarismo e suas consequências" {{ Session::get('theme') ==  'TEXTO 2 - O sedentarismo e suas consequências' ? 'selected' : ''}}>TEXTO 2 - O sedentarismo e suas consequências</option>
+        
+                                </select>
+                            </div>
+                            <textarea name="essay" id="essay" style="width:100%;height:200px;">
+                                {{ Session::get("essay") }}
+                           </textarea>
                     <button type="submit" class="btn btn-primary mt-2 ml-3 mb-2">Enviar</button>
 
                     </form>
@@ -78,14 +86,17 @@
 <!-- Include Editor style. -->
 
 <!-- Include Editor JS files. -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
 
 
-   <script>
-       $( document ).ready(function() {
-            new FroalaEditor('textarea#froala-editor')
-       });
-  </script>
+<script type="text/javascript">
+    bkLib.onDomLoaded(function() { nicEditors.allTextAreas() }); // convert all text areas to rich text editor on that page
+
+    bkLib.onDomLoaded(function() {
+         new nicEditor().panelInstance('essay');
+    }); // convert text area with id area1 to rich text editor.
+
+</script>
 
 <script>
     

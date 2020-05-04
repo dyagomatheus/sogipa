@@ -32,30 +32,10 @@
                     <div class="col-md-12">
     
     
-    <p style="color: #ff2e34; text-align: right;"><b>Seu tempo para concluir a prova é de 2 horas</b></p>
+    <p style="color: #ff2e34; text-align: right;"><b>Seu tempo para concluir a prova é de 2 horas e 30 minutos</b></p>
     
     <br><br>								
-    
-    <p style="font-size: 14px; text-align: justify;"><font color="#ff2e34"><b>PROCESSO SELETIVO – 2020/2</b></font><br>
-    
-    <font color="#000">O Processo Seletivo 2020/2 da Faculdade Sogipa propõe dois (2) temas para desenvolvimento de um texto dissertativo argumentativo. <br>O desafio é selecionar dos dois textos propostos, <b>somente um (1)</b> para produzir seu texto.</font></p>
-    
-    <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INSTRUÇÕES INICIAIS</font></b><br>
-    
-    <font color="#000">
-    1. Confira o número de páginas do caderno de redação, esse deve conter sete (07) páginas no total. Caso o caderno não esteja completo, solicite a troca com o fiscal.<br>
-    2. O texto elaborado deve conter de vinte (20) linhas, quantidade mínima, a trinta e cinco (35) linhas, quantidade máxima, e ser redigido com a letra legível. Se ilegível a redação não será considerada.<br>
-    3. Existe, à disposição, a <b>Ata de Ocorrência</b> para registro de quaisquer anormalidades ou comentários considerados importantes pelo candidato para melhoria do Processo. Se necessário, solicite tal documento ao fiscal.</font></p>
-    
-    <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INFORMAÇÕES BÁSICAS</font></b><br>
-    
-    <font color="#000">1.	O tempo de duração da prova é de, no mínimo, duas (2) horas e trinta (30) minutos contadas a partir do acesso do link da redação .<br>
-    
-    2.	 O valor máximo atribuído à redação é de cem (100) pontos. <b>Caso obtenha uma pontuação inferior a vinte (20) pontos, sua redação automaticamente será desclassificada</b>.<br>
-    3.	 A redação é avaliada obedecendo aos seguintes parâmetros:<br>
-    a) estrutura e conteúdo;<br>
-    b) correção gramatical, de acordo com a norma vigente.</font></p>
-    
+  
     <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INSTRUÇÕES PARA A PROVA DE REDAÇÃO</font></b><br>
     
     <font color="#000">1. Leia com atenção os temas propostos a seguir, e <b><u>escolha somente um deles</u></b> para elaborar a sua redação: <br>

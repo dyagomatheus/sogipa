@@ -24,7 +24,7 @@ class StoreEssay extends FormRequest
     public function rules()
     {
         return [
-            'essay' => 'required|max:5000|min:1000',
+            'essay' => 'required',
             'theme' => 'required',
         ];
     }

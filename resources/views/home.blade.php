@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     @if (auth()->user()->essay)
-                        Prova finalizada com sucesso
+                        Prova finalizada!
                     @else
                         Prova
                     @endif
@@ -19,8 +19,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    @if (auth()->user()->essay)
-                        <h5>eja informações abaixo</h5>
+                    @if (auth()->user()->essay && auth()->user()->essay->status == false)
+                        <h5>Veja informações abaixo</h5>
                     <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INSTRUÇÕES PARA MATRICULA DOS CLASSIFICADOS NO PROCESSO SELETIVO 2020/2</font></b></p>
 
 
@@ -63,6 +63,8 @@ g) Título de Eleitor e comprovante de votação, se maior de 18 anos <u>(copia 
 h) Certificado de Reservista, se candidato do sexo masculino <u>(copia e original)</u><br>
 
 <b>Obs.:</b> Se candidato menor de 18 anos, apresentar-se acompanhado do responsável, munido dos originais e cópias do RG e CPF e comprovante de residência do responsável.</font></p>
+                    @elseif(auth()->user()->essay->time_left <= 0 && auth()->user()->essay->status == true)
+                    <h5>Desculpe! Seu tempo de prova terminou e você não concluiu.</h5>
                     @else
                     <a href="{{route('initAvaliation')}}" class="btn btn-primary">Fazer Avaliação</a>
                     @endif
