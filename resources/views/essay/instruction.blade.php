@@ -49,7 +49,7 @@
     
     <p style="font-size: 14px; text-align: justify;"><b><font color="#ff2e34">INFORMAÇÕES BÁSICAS</font></b><br>
     
-    <font color="#000">1.	O tempo de duração da prova é de, no mínimo, duas (2) horas contadas a partir do acesso do link da redação .<br>
+    <font color="#000">1.	O tempo de duração da prova é de, no mínimo, duas (2) horas e trinta (30) minutos contadas a partir do acesso do link da redação .<br>
     
     2.	 O valor máximo atribuído à redação é de cem (100) pontos. <b>Caso obtenha uma pontuação inferior a vinte (20) pontos, sua redação automaticamente será desclassificada</b>.<br>
     3.	 A redação é avaliada obedecendo aos seguintes parâmetros:<br>
