@@ -110,9 +110,9 @@ class HomeController extends Controller
 
     public function show($id)
     {
-        $essay = Essay::find($id);
+        $d['essay'] = Essay::find($id);
 
-        $pdf = \PDF::loadView('essay.pdf', compact('essay'));
+        $pdf = \PDF::loadView('essay.pdf')->with($d);
                 // Se quiser que fique no formato a4 retrato: ->setPaper('a4', 'landscape')
         return $pdf->stream('redacao.pdf');
     }
