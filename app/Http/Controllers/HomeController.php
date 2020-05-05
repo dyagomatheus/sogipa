@@ -114,6 +114,7 @@ class HomeController extends Controller
 
         return \PDF::loadView('essay.pdf', compact('essay'))
                 // Se quiser que fique no formato a4 retrato: ->setPaper('a4', 'landscape')
+                ->setWarnings(false)
                 ->stream('redacao.pdf');
     }
 
