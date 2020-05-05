@@ -112,10 +112,9 @@ class HomeController extends Controller
     {
         $essay = Essay::find($id);
 
-        return \PDF::loadView('essay.pdf', compact('essay'))
+        $pdf = \PDF::loadView('essay.pdf', compact('essay'));
                 // Se quiser que fique no formato a4 retrato: ->setPaper('a4', 'landscape')
-                ->setWarnings(false)
-                ->download('redacao.pdf');
+        return $pdf->stream('redacao.pdf');
     }
 
     public function userList()
