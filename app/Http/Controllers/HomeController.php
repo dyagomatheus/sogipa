@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Essay;
 use App\Http\Requests\StoreEssay;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -114,5 +115,12 @@ class HomeController extends Controller
         return \PDF::loadView('essay.pdf', compact('essay'))
                 // Se quiser que fique no formato a4 retrato: ->setPaper('a4', 'landscape')
                 ->stream('redacao.pdf');
+    }
+
+    public function userList()
+    {
+        $users = User::paginate();
+
+        return view('user.list', compact('users'));
     }
 }

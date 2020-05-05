@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/iniciar-avaliacao', 'HomeController@initAvaliation')->name('initAvaliation');
 Route::post('/enviar-avaliacao', 'HomeController@store')->name('essay.store');
 Route::get('/visualizar-avaliacao/{id}', 'HomeController@show')->name('essay.show');
+Route::get('/alunos', 'HomeController@userList')->name('user.list');

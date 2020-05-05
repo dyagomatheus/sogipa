@@ -2,13 +2,11 @@
 
 @section('content')
 <div class="container">
-    <a href="{{route('register')}}" class="btn btn-success mb-2 mr-2">Cadastrar Aluno</a>
-    <a href="{{route('user.list')}}" class="btn btn-primary mb-2">Lista de Alunos</a>
-
+    <a href="{{route('register')}}" class="btn btn-success mb-2">Cadastrar Aluno</a>
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Redações</div>
+                <div class="card-header">Lista de Alunos</div>
 
                 <div class="card-body">
                     <table class="table table-striped">
@@ -16,24 +14,24 @@
                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Aluno</th>
-                            <th scope="col">Inicio</th>
-                            <th scope="col">Término</th>
+                            <th scope="col">E-mail</th>
 
                           </tr>
                         </thead>
                         <tbody>
-                            @foreach ($essays as $essay)
+                            @foreach ($users as $user)
                             <tr>
-                                <th scope="row">{{$essay->id}}</th>
-                                <td> <a href="{{route('essay.show', $essay->id)}}" target="_blank">{{$essay->user->name}}</a></td>
-                                <th scope="row">{{$essay->created_at}}</th>
-                                <th scope="row">{{$essay->updated_at}}</th>
-
+                                <th scope="row">{{$user->id}}</th>
+                                <td>{{$user->name}}</td>
+                                <td>{{$user->email}}</td>
                             </tr>
                             @endforeach
                         </tbody>
                       </table>
                 </div>
+                <span class="ml-4">
+                    {{ $users->links() }}
+                </span>
             </div>
         </div>
     </div>
