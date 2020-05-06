@@ -16,6 +16,7 @@
                     </button>
                   </p>
                 <div class="card-body">
+                    <p> <strong class="text-danger">Importante: Você deve fazer sua redação no editor abaixo, a função de colar de outro local anulará sua redação.</strong> </p>
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -70,7 +71,7 @@
         
                                 </select>
                             </div>
-                            <textarea name="essay" id="essay" style="width:100%;height:200px;">
+                            <textarea name="essay" id="essay" style="width:100%;height:200px;" onpaste="return false" ondrop="return false" onpaste="myFunction()">
                                 {{ Session::get("essay") }}
                            </textarea>
                     <button type="submit" class="btn btn-primary mt-2 ml-3 mb-2">Enviar</button>
@@ -93,9 +94,15 @@
     bkLib.onDomLoaded(function() { nicEditors.allTextAreas() }); // convert all text areas to rich text editor on that page
 
     bkLib.onDomLoaded(function() {
-         new nicEditor().panelInstance('essay');
+        new nicEditor().panelInstance('essay');
     }); // convert text area with id area1 to rich text editor.
+    function onpaste() {
 
+    $("#essay").bind('paste', function(e) {
+                        e.preventDefault();
+                    });
+
+    }
 </script>
 
 <script>

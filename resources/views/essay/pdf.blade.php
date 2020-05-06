@@ -27,7 +27,7 @@
     </center>
 
     <div class="justify-content-md-center text-justify">
-        {!! htmlspecialchars_decode($essay->essay)  !!}
+        {!! $essay->essay !!}
     </div>
 </body>
 </html>
