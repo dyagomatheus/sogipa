@@ -11,8 +11,8 @@
 </head>
 <body>
     <center style="font-family:Calibri; font-size: 10px">
-        <img src="img/sogipa.png" alt=""><br>
-        <strong>FACULDADE SOGIPA</strong> <br>
+        <img src="img/fasb.png" alt=""><br>
+        <strong>FACULDADE DO SERTÃO BAIANO - FASB</strong> <br>
         Credenciada pela Portaria Ministerial nº 1.387 de 14/11/2008 Publicado no DOU de 17/11/2008<br>
         Transferência de Mantença nº 47 de 26/01/2018, DOU de 29/01/2018<br>
         Mantida pela Faculdades Integradas de Foz do Iguaçu - FAMERCO<br>
