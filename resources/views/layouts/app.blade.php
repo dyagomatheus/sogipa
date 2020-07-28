@@ -72,6 +72,14 @@
         </nav>
 
         <main class="py-4">
+            <div class="container">
+                @guest
+                @else
+                    @if (auth()->user()->type == 1)
+                        @include('layouts.links')
+                    @endif
+                @endguest
+            </div>
             @yield('content')
         </main>
     </div>

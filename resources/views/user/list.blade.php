@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="container">
-    <a href="{{route('register')}}" class="btn btn-success mb-2">Cadastrar Aluno</a>
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">

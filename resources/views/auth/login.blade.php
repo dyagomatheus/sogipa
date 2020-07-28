@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
                 <center>
-                    <img src="{{asset('img/fasb.png')}}" alt="" width="20%" class="mt-2">
+                    <img src="{{asset('img/sogipa.png')}}" alt="" width="20%" class="mt-2">
                 </center>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

@@ -22,3 +22,17 @@ Route::get('/iniciar-avaliacao', 'HomeController@initAvaliation')->name('initAva
 Route::post('/enviar-avaliacao', 'HomeController@store')->name('essay.store');
 Route::get('/visualizar-avaliacao/{id}', 'HomeController@show')->name('essay.show');
 Route::get('/alunos', 'HomeController@userList')->name('user.list');
+Route::resource('course', 'CourseController');
+Route::get('/course/{id}/delete', 'CourseController@delete')->name('course.delete');
+
+Route::resource('student', 'StudentController');
+Route::get('/student/{id}/delete', 'StudentController@delete')->name('student.delete');
+
+Route::resource('verse', 'VerseController');
+Route::get('/verse/{id}/delete', 'VerseController@delete')->name('verse.delete');
+
+Route::resource('verse', 'VerseController');
+Route::get('/verse/{id}/delete', 'VerseController@delete')->name('verse.delete');
+Route::get('/verse/{id}/edit', 'VerseController@edit')->name('verse.edit');
+
+Route::get('/certificate/validate/{code}', 'ValidateController@validate')->name('verse.edit');
