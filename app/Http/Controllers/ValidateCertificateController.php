@@ -8,7 +8,7 @@ use App\Student;
 use App\Http\Requests\StoreVerse;
 use App\User;
 
-class ValidateCertificatController extends Controller
+class ValidateCertificateController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,7 +22,7 @@ class ValidateCertificatController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function validate($code)
+    public function validateCode($code)
     {
        $certificate = Student::where('validation_code', $code)->first();
 

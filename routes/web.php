@@ -35,4 +35,4 @@ Route::resource('verse', 'VerseController');
 Route::get('/verse/{id}/delete', 'VerseController@delete')->name('verse.delete');
 Route::get('/verse/{id}/edit', 'VerseController@edit')->name('verse.edit');
 
-Route::get('/certificate/validate/{code}', 'ValidateController@validate')->name('verse.edit');
+Route::get('/certificate/validate/{code}', 'ValidateCertificateController@validateCode')->name('verse.edit');
