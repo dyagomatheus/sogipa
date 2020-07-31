@@ -10,17 +10,19 @@
     <style>
         .aluno{
             position: absolute;
-            margin-top: 420px;
+            margin-top: 400px;
             margin-left: 400px;
-            font-size: 1rem;
+            font-size: 3rem;
             font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .curso{
             position: absolute;
             margin-top: 535px;
             margin-left: 400px;
-            font-size: 1rem;
+            font-size: 2.5rem;
             font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .data_realizacao{
             position: absolute;
@@ -32,7 +34,7 @@
         .coordenador{
             position: absolute;
             margin-top: 707px;
-            margin-left: 132px;
+            margin-left: 150px;
             font-size: 16px;
         }
         .data_emissao{

@@ -34,7 +34,7 @@
                                     <th scope="row">{{$student->created_at}}</th>
                                     <th scope="row">{{$student->course->speaker}}</th>
                                     <th scope="row">{{$student->course->lecture}}</th>
-                                    <td> <a href="{{route('student.show', $student->id)}}">Visualizar</a></td>
+                                    <td> <a href="{{route('student.show', $student->id)}}" target="_blank">Visualizar</a></td>
                                     <td> <a href="{{route('student.edit', $student->id)}}">Editar</a></td>
                                     <td> <a href="{{route('student.delete', $student->id)}}">Deletar</a></td>
                                 </tr>
