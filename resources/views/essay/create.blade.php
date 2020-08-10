@@ -65,7 +65,7 @@
                         @csrf
                             <div class="form-group col-6 mt-2">
                                 <select name="theme" id="theme" class="form-control" required>
-                                    <option value="" disabled selected>ECOLHA SOBRE QUAL TEXTO VOCÊ FARÁ A REDAÇÃO</option>
+                                    <option value="" disabled selected>ESCOLHA SOBRE QUAL TEXTO VOCÊ FARÁ A REDAÇÃO</option>
                                     <option value="TEXTO 1 - Cuidados com a saúde podem melhorar a vida" {{ Session::get('theme') ==  'TEXTO 1 - Cuidados com a saúde podem melhorar a vida' ? 'selected' : ''}}>TEXTO 1 - Cuidados com a saúde podem melhorar a vida </option>
                                     <option value="TEXTO 2 - O sedentarismo e suas consequências" {{ Session::get('theme') ==  'TEXTO 2 - O sedentarismo e suas consequências' ? 'selected' : ''}}>TEXTO 2 - O sedentarismo e suas consequências</option>
         

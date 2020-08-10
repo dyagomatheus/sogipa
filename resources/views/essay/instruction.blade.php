@@ -49,8 +49,7 @@
     5.	Não copie trechos dos textos motivadores; seja autor de seu próprio texto.<br>
     6.	Dê um título a seu texto.<br>
     7.	Respeite margens e entradas de parágrafo e utilize a norma culta da língua portuguesa.<br>
-    8.	Desenvolva o texto dentro do limite de 20 a 35 linhas.<br>
-    9.	Após a elaboração da sua redação você irá encaminhar a mesma em <b>formato PDF</b>.</font></p>
+    8.	Desenvolva o texto dentro do limite de 1000 a 5000 caracteres.</font></p>
     
     <p style="font-size: 14px; text-align: justify;"><b><font color="#0da6ff">PROPOSTA DE REDAÇÃO Nº 1</font></b><br>
     <font color="#000">COM BASE NA LEITURA DO TEXTO ABAIXO E NAS SUAS REFLEXÕES ACERCA DO QUE ELE REPRESENTA, ELABORE UM TEXTO DISSERTATIVO-ARGUMENTATIVO EM QUE DEVERÁ TRATAR DO SEGUINTE TEMA: <b>“CUIDADOS COM A SAÚDE PODEM MELHORAR A VIDA”</font></b></b></p><br>
@@ -59,7 +58,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Todo mundo sabe que não fumar, fazer esporte, cuidar da alimentação, não exagerar no álcool e evitar o sobrepeso são hábitos saudáveis. Mas nem todos levam essas recomendações ao pé da letra. Um grupo de cientistas da Escola de Saúde Pública Harvard T.H. Chan publicou na revista <b><i>Circulation</i></b> um estudo que deixa mais claros os benefícios de um estilo de vida. Segundo a pesquisa, respeitar essas cinco normas pode representar um aumento da expectativa de vida de até 14 anos para as mulheres e 12 anos para os homens, em relação a quem não os segue. Os autores chegaram a essa conclusão após observarem ao longo de 34 anos os comportamentos mais ou menos saudáveis de 123.000 norte-americanos.”<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Não seguir os fatores indicados no estudo pode levar a sérias consequências para a saúde. Os pesquisadores apontam para uma longa lista de efeitos negativos para cada um deles, como o risco de sofrer câncer ou outras doenças causadas pelo tabagismo ou pelo diabetes e os problemas cardiovasculares associados à má alimentação. Por isso insistem que, se esses cinco hábitos forem adotados, os benefícios são garantidos.”</p><br>
     
-    <p style="font-size: 14px; text-align: justify;"><b><i><font color="#000">Seu texto deve conter de vinte (20) linhas, quantidade <u>mínima</u>, e trinta (35) linhas, quantidade <u>máxima</u>, com letra de tamanho regular.</font></i></b></p>
+    <p style="font-size: 14px; text-align: justify;"><b><i><font color="#000">Seu texto deve conter de um mil (1000) caracteres, quantidade <u>mínima</u>, e cinco mil (5000) caracteres, quantidade <u>máxima</u>, com letra de tamanho regular.</font></i></b></p>
     
     
     <p style="font-size: 14px; text-align: justify;"><b><font color="#0da6ff">PROPOSTA DE REDAÇÃO Nº 2</font></b><br>
@@ -70,7 +69,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Crianças crescem obesas por só ficar em casa o dia todo em joguinhos virtuais, não brincam mais e não tem mais nenhum tipo de gasto calórico, e além se obesas, desenvolvem outros problemas de saúde como a diabetes, por isso os pais deveriam reeducar seus filhos a tempo, antes que a situação se torne irreversível.”<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Encontros reais? Não mais, pois as amizades agora são feitas somente através da criação de sites específicos para isso. Sem encontros com amigos reais, atividades como andar de bicicleta, brincar, passear, podem contribuir muito para que os jovens não se tornem sedentários, mas não só para os jovens como para os idosos, se realizarem atividades físicas e não derem lugar ao sedentarismo, alcançaram vários anos a mais de vida.”</p>
     
-    <p style="font-size: 14px; text-align: justify;"><b><font color="#000">Seu texto deve conter de vinte (25) linhas, quantidade <u>mínima</u>, e trinta (30) linhas, quantidade <u>máxima</u>, com letra de tamanho regular.</font></b></p><br><br>
+    <p style="font-size: 14px; text-align: justify;"><b><i><font color="#000">Seu texto deve conter de um mil (1000) caracteres, quantidade <u>mínima</u>, e cinco mil (5000) caracteres, quantidade <u>máxima</u>, com letra de tamanho regular.</font></i></b></p><br><br>
     <button class="btn btn-primary mt-3 ml-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Ocultar
     </button>
