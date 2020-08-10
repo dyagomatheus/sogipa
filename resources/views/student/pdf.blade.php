@@ -8,21 +8,30 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        .aluno{
+        body{
+            color: #001232;
+        }
+        p.aluno{
             position: absolute;
-            margin-top: 400px;
-            margin-left: 400px;
             font-size: 3rem;
             font-weight: 900;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 24em;
+            text-align: center;
+            margin-top: 400px;
         }
         .curso{
             position: absolute;
-            margin-top: 535px;
-            margin-left: 400px;
             font-size: 2.5rem;
             font-weight: 900;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 24em;
+            text-align: center;
+            margin-top: 535px;
         }
         .data_realizacao{
             position: absolute;
@@ -76,8 +85,10 @@
     </style>
 </head>
 <body>
-    <p class="aluno">{{ $certificate->name }}</p>   
-    <p class="curso">{{ $certificate->course->name }}</p>   
+    <div class="main">
+        <p class="aluno">{{ $certificate->name }}</p>   
+        <p class="curso">{{ $certificate->course->name }}</p>
+    </div>   
     <p class="data_realizacao">{{ date('d/m/Y', strtotime($certificate->course->realization_date)) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>   
     <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
     <p class="data_emissao">Porto Alegre, {{ date('d/m/Y', strtotime($certificate->created_at)) }}</p>   
