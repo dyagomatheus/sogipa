@@ -32,7 +32,7 @@
                     <strong><a href="{{ route('home') }}">Início</a></strong>
 
                     <br>
-                    <form name=myform action="{{route('course.store')}}" method="POST">
+                    <form name=myform action="{{route('course.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                             <div class="form-group col-6 mt-2">
                                 <label for="">Curso</label>
@@ -49,6 +49,10 @@
                             <div class="form-group col-6 mt-2">
                                 <label for="">Coordenador</label>
                                 <input type="text" name="coordinator" class="form-control">
+                            </div>
+                            <div class="form-group col-6 mt-2">
+                                <label for="">Assinatura Coordenador</label>
+                                <input type="file" name="image" class="form-control" accept=".png">
                             </div>
                             <div class="form-group col-6 mt-2">
                                 <label for="">Palestrante</label>

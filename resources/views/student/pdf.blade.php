@@ -22,14 +22,14 @@
             text-align: center;
             margin-top: 400px;
         }
-        .curso{
+        p.curso{
             position: absolute;
             font-size: 2.5rem;
             font-weight: 900;
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 24em;
+            width: 29em;
             text-align: center;
             margin-top: 535px;
         }
@@ -42,7 +42,7 @@
         }
         .coordenador{
             position: absolute;
-            margin-top: 707px;
+            margin-top: 648px;
             margin-left: 150px;
             font-size: 16px;
         }
@@ -82,14 +82,23 @@
         margin-left: 170px;
         font-size: 16px;
         }
+        .sign{
+            position: absolute;
+            z-index: 9999;
+            margin-top: 665px;
+            margin-left: 150px;
+        }
     </style>
 </head>
 <body>
     <div class="main">
         <p class="aluno">{{ $certificate->name }}</p>   
+    </div>
+    <div class="course-main">
         <p class="curso">{{ $certificate->course->name }}</p>
     </div>   
-    <p class="data_realizacao">{{ date('d/m/Y', strtotime($certificate->course->realization_date)) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>   
+    <p class="data_realizacao">{{ date('d/m/Y', strtotime($certificate->course->realization_date)) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>  
+    <img src="{{ url("storage/{$certificate->course->sign}") }}" alt="" class="sign">
     <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
     <p class="data_emissao">Porto Alegre, {{ date('d/m/Y', strtotime($certificate->created_at)) }}</p>   
     <p class="palestrante">Palestrante: {{ $certificate->course->speaker }} </p>   

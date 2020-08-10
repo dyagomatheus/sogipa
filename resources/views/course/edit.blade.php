@@ -34,7 +34,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div id="editor">
-                    <form name=myform action="{{route('course.update', $course->id)}}" method="POST">
+                    <form name=myform action="{{route('course.update', $course->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                             <div class="form-group col-6 mt-2">
@@ -52,6 +52,10 @@
                             <div class="form-group col-6 mt-2">
                                 <label for="">Coordenador</label>
                                 <input type="text" value="{{ $course->coordinator }}" name="coordinator" class="form-control">
+                            </div>
+                            <div class="form-group col-6 mt-2">
+                                <label for="">Assinatura Coordenador</label>
+                                <input type="file" name="image" class="form-control" accept=".png">
                             </div>
                             <div class="form-group col-6 mt-2">
                                 <label for="">Palestrante</label>

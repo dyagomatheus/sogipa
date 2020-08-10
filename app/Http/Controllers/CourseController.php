@@ -46,7 +46,29 @@ class CourseController extends Controller
     public function store(StoreCourse $request)
     {
         if(auth()->user()->type == 1){
-            Course::create($request->all());
+            // Define o valor default para a variável que contém o nome da imagem 
+            $nameFile = null;
+
+            // Verifica se informou o arquivo e se é válido
+            if ($request->hasFile('image') && $request->file('image')->isValid()) {
+                    
+                // Define um aleatório para o arquivo baseado no timestamps atual
+                $name = uniqid(date('HisYmd'));
+
+                // Recupera a extensão do arquivo
+                $extension = $request->image->extension();
+
+                // Define finalmente o nome
+                $nameFile = "{$name}.{$extension}";
+
+                // Faz o upload:
+                $upload = $request->image->storeAs('signs', $nameFile);
+                // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+            }
+            $course = Course::create($request->all());
+            $course->sign = $upload;
+            $course->save();
+            
             return redirect()->back()->with('success', 'Curso cadastrado com sucesso.');
         }else{
             return view('home');
@@ -65,6 +87,26 @@ class CourseController extends Controller
     {
         $course = Course::find($id);
         $course->update($request->all());
+        $nameFile = null;
+
+        // Verifica se informou o arquivo e se é válido
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+                
+            // Define um aleatório para o arquivo baseado no timestamps atual
+            $name = uniqid(date('HisYmd'));
+
+            // Recupera a extensão do arquivo
+            $extension = $request->image->extension();
+
+            // Define finalmente o nome
+            $nameFile = "{$name}.{$extension}";
+
+            // Faz o upload:
+            $upload = $request->image->storeAs('signs', $nameFile);
+            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+            $course->sign = $upload;
+            $course->save();
+        }
         return redirect()->back()->with('success', 'Curso editado com sucesso.');
     }
 

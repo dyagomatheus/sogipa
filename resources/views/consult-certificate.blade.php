@@ -192,7 +192,7 @@ border-radius: 100px;float: left">
    <!--<form class="form-contact ui-form" action="envia-formulario-vestibular.php" method="post" enctype="multipart/form-data">-->
 										<div class="row">
 											<div class="col-md-6">
-												<input class="form-control" type="text" name="cpf" placeholder="Digite seu CPF..."  required="">
+												<input class="form-control" type="number" name="cpf" placeholder="Digite seu CPF..."  required="" maxlength="11">
 											</div>
 											
 											
