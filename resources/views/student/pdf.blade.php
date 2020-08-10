@@ -49,7 +49,7 @@
         .data_emissao{
         position: absolute;
         margin-top: 648px;
-        margin-left: 833px;
+        margin-left: 852px;
         font-size: 16px;
         }
         .palestrante{
@@ -122,9 +122,9 @@
         </tbody>
     </table>
     <p class="qrcode">    
-        {!! QrCode::size(150)->generate('https://faculdadesogipa.edu.br/online/'.$certificate->validation_code); !!}
+        {!! QrCode::size(150)->generate('https://faculdadesogipa.edu.br/redacao/'.$certificate->validation_code); !!}
         <br>
-        <span style="font-size: 10px;">https://faculdadesogipa.edu.br/online/{{ $certificate->validation_code }}</span>
+        <span style="font-size: 10px;">https://faculdadesogipa.edu.br/redacao/{{ $certificate->validation_code }}</span>
     </p>
     <img src="{{ asset('img/certificado-frente.jpg') }}" alt="">
     <img src="{{ asset('img/certificado-verso.jpg') }}" alt="">
