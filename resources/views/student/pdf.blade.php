@@ -29,14 +29,14 @@
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 23em;
+            width: 26em;
             text-align: center;
             margin-top: 535px;
         }
         .data_realizacao{
             position: absolute;
             margin-top: 593px;
-            margin-left: 465px;
+            margin-left: 523px;
             font-size: 13px;
             /* font-weight: 900; */
         }
