@@ -29,7 +29,7 @@
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 29em;
+            width: 23em;
             text-align: center;
             margin-top: 535px;
         }
@@ -49,7 +49,7 @@
         .data_emissao{
         position: absolute;
         margin-top: 648px;
-        margin-left: 827px;
+        margin-left: 833px;
         font-size: 16px;
         }
         .palestrante{
