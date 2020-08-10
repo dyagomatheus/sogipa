@@ -28,9 +28,9 @@ class ValidateCertificateController extends Controller
 
        if($certificate){
            return view('student.validate', compact('certificate'));
-       }else{
-        return view('student.no_validate');
-    }
+        }else{
+            return view('student.no_validate');
+        }
     }
 
     public function create()
@@ -82,5 +82,21 @@ class ValidateCertificateController extends Controller
         $verse = Verse::find($id);
         $verse->delete();
         return redirect()->back()->with('success', 'Informação deletado com sucesso.');
+    }
+
+    public function consult()
+    {
+        return view('consult-certificate');
+    }
+
+    public function viewCertificate(Request $request)
+    {
+        $certificate = Student::where('cpf', $request->cpf)->first();
+
+        if($certificate){
+            return view('student.pdf', compact('certificate'));
+         }else{
+             return view('student.no_validate');
+         }
     }
 }

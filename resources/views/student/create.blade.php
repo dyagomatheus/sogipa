@@ -39,6 +39,10 @@
                                 <input type="text" name="name" class="form-control">
                             </div>
                             <div class="form-group col-6 mt-2">
+                                <label for="">CPF</label>
+                                <input type="number" name="cpf" class="form-control" minlength="11" maxlength="11">
+                            </div>
+                            <div class="form-group col-6 mt-2">
                                 <label for="">Curso</label>
                                 <select name="course_id" id="course_id" class="form-control">
                                     <option disabled selected>Escolha um curso</option>

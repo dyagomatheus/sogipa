@@ -25,7 +25,8 @@ class StoreStudent extends FormRequest
     {
         return [
             'name' => 'required',
-            'course_id' => 'required'
+            'course_id' => 'required',
+            'cpf' => 'required'
         ];
     }
     public function messages()
@@ -33,6 +34,7 @@ class StoreStudent extends FormRequest
         return [
             'name.required' => 'Por favor informe o nome do Aluno', 
             'course_id.required'  => 'Por favor informe o curso.',
+            'cpf.required'  => 'Por favor informe o CPF.',
         ];
     }
 }
