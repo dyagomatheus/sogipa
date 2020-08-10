@@ -29,7 +29,7 @@
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 26em;
+            width: 29em;
             text-align: center;
             margin-top: 535px;
         }
