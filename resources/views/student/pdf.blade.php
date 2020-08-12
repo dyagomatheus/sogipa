@@ -13,23 +13,23 @@
         }
         p.aluno{
             position: absolute;
-            font-size: 3rem;
+            font-size: 28px;
             font-weight: 900;
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 24em;
+            width: 41em;
             text-align: center;
             margin-top: 400px;
         }
         p.curso{
             position: absolute;
-            font-size: 2.5rem;
+            font-size: 28px;
             font-weight: 900;
             font-family: Arial, Helvetica, sans-serif;
             margin-left: auto;
             margin-right: auto;
-            width: 29em;
+            width: 41em;
             text-align: center;
             margin-top: 535px;
         }
@@ -49,7 +49,7 @@
         .data_emissao{
         position: absolute;
         margin-top: 648px;
-        margin-left: 852px;
+        margin-left: 797px;
         font-size: 16px;
         }
         .palestrante{
@@ -91,6 +91,7 @@
     </style>
 </head>
 <body>
+
     <div class="main">
         <p class="aluno">{{ $certificate->name }}</p>   
     </div>
@@ -100,10 +101,10 @@
     <p class="data_realizacao">{{ date('d/m/Y', strtotime($certificate->course->realization_date)) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>  
     <img src="{{ url("storage/{$certificate->course->sign}") }}" alt="" class="sign">
     <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
-    <p class="data_emissao">Porto Alegre, {{ date('d/m/Y', strtotime($certificate->created_at)) }}</p>   
+    <p class="data_emissao">Porto Alegre, {{ \App\Student::dateFormat($certificate->created_at) }}</p>   
     <p class="palestrante">Palestrante: {{ $certificate->course->speaker }} </p>   
     <p class="assunto">{{ $certificate->course->lecture }}</p>   
-    <p class="periodo_realizacao">Periodo de realização: {{ date('d/m/Y', strtotime($certificate->course->realization_date)) }}</p>
+    <p class="periodo_realizacao">Periodo de realização: {{  \App\Student::dateFormat($certificate->course->realization_date) }}</p>
 
     <table class="table tabelinha">
         <thead>
