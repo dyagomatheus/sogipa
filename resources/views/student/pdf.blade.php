@@ -42,9 +42,10 @@
         }
         .coordenador{
             position: absolute;
-            margin-top: 726px;
-            margin-left: 143px;
+            margin-top: 723px;
+            margin-left: 133px;
             font-size: 16px;
+            font-weight: bold;
         }
         .data_emissao{
         position: absolute;
