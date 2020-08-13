@@ -67,9 +67,9 @@
         }
         .periodo_realizacao{
             position: absolute;
-            margin-top: 930px;
-            margin-left: 430px;
-            font-size: 16px;
+            margin-top: 592.5px;
+            margin-left: 508px;
+            font-size: 13.8px;
         }
         .tabelinha{
             width: 60%;
