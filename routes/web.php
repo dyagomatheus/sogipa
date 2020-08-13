@@ -34,7 +34,8 @@ Route::get('/verse/{id}/delete', 'VerseController@delete')->name('verse.delete')
 Route::resource('verse', 'VerseController');
 Route::get('/verse/{id}/delete', 'VerseController@delete')->name('verse.delete');
 Route::get('/verse/{id}/edit', 'VerseController@edit')->name('verse.edit');
+Route::put('/verse/{id}/update', 'VerseController@update')->name('verse.update');
 
-Route::get('/certificate/validate/{code}', 'ValidateCertificateController@validateCode')->name('verse.edit');
+Route::get('/certificate/validate/{code}', 'ValidateCertificateController@validateCode')->name('certificate.validate');
 Route::get('/solicitacao-certificado', 'ValidateCertificateController@consult')->name('consult.certificate');
 Route::post('/consult/certificate', 'ValidateCertificateController@viewCertificate')->name('view.certificate');

@@ -49,7 +49,7 @@
         .data_emissao{
         position: absolute;
         margin-top: 648px;
-        margin-left: 797px;
+        margin-left: 822px;
         font-size: 16px;
         }
         .palestrante{
@@ -88,6 +88,13 @@
             margin-top: 665px;
             margin-left: 150px;
         }
+        .sponsors{
+            position: absolute;
+            z-index: 9999;
+            margin-top: 1470px;
+            margin-left: 673px;
+            float: left;
+        }
     </style>
 </head>
 <body>
@@ -102,7 +109,7 @@
     <img src="{{ url("storage/{$certificate->course->sign}") }}" alt="" class="sign">
     <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
     <p class="data_emissao">Porto Alegre, {{ \App\Student::dateFormat($certificate->created_at) }}</p>   
-    <p class="palestrante">Palestrante: {{ $certificate->course->speaker }} </p>   
+    {{-- <p class="palestrante">Palestrante: {{ $certificate->course->speaker }} </p>    --}}
     <p class="assunto">{{ $certificate->course->lecture }}</p>   
     <p class="periodo_realizacao">Periodo de realização: {{  \App\Student::dateFormat($certificate->course->realization_date) }}</p>
 
@@ -111,6 +118,7 @@
             <th>Instrutor(a)</th>
             <th>Disciplina</th>
             <th>Assuntos Abordados</th>
+            <th>Carga Horária</th>
         </thead>
         <tbody>
             @foreach ($certificate->course->verses as $item)
@@ -118,6 +126,7 @@
                     <td>{{ $item->teachers }}</td>
                     <td>{{ $item->discipline }}</td>
                     <td>{!! $item->subjects !!}</td>
+                    <td>{!! $item->workload !!}</td>
                 </tr>               
             @endforeach
         </tbody>
@@ -127,6 +136,7 @@
         <br>
         <span style="font-size: 10px;">https://faculdadesogipa.edu.br/redacao/{{ $certificate->validation_code }}</span>
     </p>
+    <img src="{{ url("storage/{$certificate->sponsors}") }}" alt="" class="sponsors">
     <img src="{{ asset('img/certificado-frente.jpg') }}" alt="">
     <img src="{{ asset('img/certificado-verso.jpg') }}" alt="">
 </body>

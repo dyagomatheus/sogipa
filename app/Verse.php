@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Verse extends Model
 {
-    protected $fillable = ['teachers', 'discipline', 'subjects', 'course_id'];
+    protected $fillable = ['teachers', 'discipline', 'subjects', 'course_id', 'workload'];
 
     public function course()
     {

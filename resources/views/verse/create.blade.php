@@ -47,6 +47,10 @@
                                 <textarea name="subjects" class="form-control"></textarea>
                             </div>
                             <div class="form-group col-6 mt-2">
+                                <label for="">Carga Horária</label>
+                                <input type="text" name="workload" class="form-control">
+                            </div>
+                            <div class="form-group col-6 mt-2">
                                 <label for="">Curso</label>
                                 <select name="course_id" id="course_id" class="form-control">
                                     <option disabled selected>Escolha um curso</option>

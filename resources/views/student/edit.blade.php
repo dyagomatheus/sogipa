@@ -32,7 +32,7 @@
                     <strong><a href="{{ route('home') }}">Início</a></strong>
 
                     <br>
-                    <form name=myform action="{{route('student.update', $student->id)}}" method="POST">
+                    <form name=myform action="{{route('student.update', $student->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                             <div class="form-group col-6 mt-2">
@@ -51,6 +51,10 @@
                                         <option {{ $student->course_id == $course->id ? 'selected' : ''  }} value="{{ $course->id }}">{{ $course->name }}</option>
                                     @endforeach
                                 </select>
+                            </div>
+                            <div class="form-group col-6 mt-2">
+                                <label for="">Patrocinadores</label>
+                                <input type="file" name="image" class="form-control" accept=".png">
                             </div>
                             <button type="submit" class="btn btn-primary mt-2 ml-3 mb-2">Enviar</button>
                     </form>

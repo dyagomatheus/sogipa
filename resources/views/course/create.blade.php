@@ -54,10 +54,10 @@
                                 <label for="">Assinatura Coordenador</label>
                                 <input type="file" name="image" class="form-control" accept=".png">
                             </div>
-                            <div class="form-group col-6 mt-2">
+                            {{-- <div class="form-group col-6 mt-2">
                                 <label for="">Palestrante</label>
                                 <input type="text" name="speaker" class="form-control">
-                            </div>
+                            </div> --}}
                             <div class="form-group col-6 mt-2">
                                 <label for="">Assunto Abordado</label>
                                 <input type="text" name="lecture" class="form-control">

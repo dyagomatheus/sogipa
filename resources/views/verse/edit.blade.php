@@ -34,6 +34,7 @@
                     <br>
                     <form name=myform action="{{route('verse.update', $verse->id)}}" method="POST">
                         @csrf
+                        @method('PUT')
                             <div class="form-group col-6 mt-2">
                                 <label for="">Professor</label>
                                 <input type="text" value="{{ $verse->teachers }}" name="teachers" class="form-control">
@@ -45,6 +46,10 @@
                             <div class="form-group col-6 mt-2">
                                 <label for="">Assuntos</label>
                                 <textarea name="subjects" class="form-control">{!! $verse->discipline !!}</textarea>
+                            </div>
+                            <div class="form-group col-6 mt-2">
+                                <label for="">Carga Horária</label>
+                                <input type="text" value="{{ $verse->workload }}" name="workload" class="form-control">
                             </div>
                             <div class="form-group col-6 mt-2">
                                 <label for="">Curso</label>

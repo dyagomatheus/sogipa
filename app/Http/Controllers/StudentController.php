@@ -50,7 +50,27 @@ class StudentController extends Controller
         if(auth()->user()->type == 1){
             $student = Student::create($request->all());
             $student->validation_code = sha1(time());
+            $nameFile = null;
+
+            // Verifica se informou o arquivo e se é válido
+            if ($request->hasFile('image') && $request->file('image')->isValid()) {
+                    
+                // Define um aleatório para o arquivo baseado no timestamps atual
+                $name = uniqid(date('HisYmd'));
+
+                // Recupera a extensão do arquivo
+                $extension = $request->image->extension();
+
+                // Define finalmente o nome
+                $nameFile = "{$name}.{$extension}";
+
+                // Faz o upload:
+                $upload = $request->image->storeAs('sponsors', $nameFile);
+                // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+                $student->sponsors = $upload;
+            }
             $student->save();
+
             return redirect()->back()->with('success', 'Certificado cadastrado com sucesso.');
         }else{
             return view('home');
@@ -69,6 +89,26 @@ class StudentController extends Controller
     {
         $student = Student::find($id);
         $student->update($request->all());
+        $nameFile = null;
+
+        // Verifica se informou o arquivo e se é válido
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+                
+            // Define um aleatório para o arquivo baseado no timestamps atual
+            $name = uniqid(date('HisYmd'));
+
+            // Recupera a extensão do arquivo
+            $extension = $request->image->extension();
+
+            // Define finalmente o nome
+            $nameFile = "{$name}.{$extension}";
+
+            // Faz o upload:
+            $upload = $request->image->storeAs('sponsors', $nameFile);
+            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+            $student->sponsors = $upload;
+            $student->save();
+        }
         return redirect()->back()->with('success', 'Certificado editado com sucesso.');
     }
 

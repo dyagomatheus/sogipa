@@ -63,11 +63,11 @@ class VerseController extends Controller
         return view('verse.edit', compact('verse', 'courses'));
     }
 
-    public function update($id, StoreStudent $request)
+    public function update($id, StoreVerse $request)
     {
         $verse = Verse::find($id);
         $verse->update($request->all());
-        return redirect()->back()->with('success', 'Certificado editado com sucesso.');
+        return redirect()->back()->with('success', 'Instrutor editado com sucesso.');
     }
 
     public function show($id)
