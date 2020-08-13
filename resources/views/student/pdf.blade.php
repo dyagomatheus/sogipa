@@ -42,8 +42,8 @@
         }
         .coordenador{
             position: absolute;
-            margin-top: 648px;
-            margin-left: 150px;
+            margin-top: 726px;
+            margin-left: 143px;
             font-size: 16px;
         }
         .data_emissao{
@@ -105,7 +105,7 @@
     <div class="course-main">
         <p class="curso">{{ $certificate->course->name }}</p>
     </div>   
-    <p class="data_realizacao">{{ date('d/m/Y', strtotime($certificate->course->realization_date)) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>  
+    <p class="data_realizacao">{{ \App\Student::dateFormat($certificate->course->realization_date) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>  
     <img src="{{ url("storage/{$certificate->course->sign}") }}" alt="" class="sign">
     <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
     <p class="data_emissao">Porto Alegre, {{ \App\Student::dateFormat($certificate->created_at) }}</p>   
