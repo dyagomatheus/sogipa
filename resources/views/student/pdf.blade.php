@@ -35,15 +35,15 @@
         }
         .data_realizacao{
             position: absolute;
-            margin-top: 593px;
-            margin-left: 523px;
-            font-size: 13px;
+            margin-top: 592.5px;
+            margin-left: 508px;
+            font-size: 13.8px;
             /* font-weight: 900; */
         }
         .coordenador{
             position: absolute;
             margin-top: 723px;
-            margin-left: 133px;
+            margin-left: 135px;
             font-size: 16px;
             font-weight: bold;
         }
@@ -67,9 +67,9 @@
         }
         .periodo_realizacao{
             position: absolute;
-            margin-top: 592.5px;
-            margin-left: 508px;
-            font-size: 13.8px;
+            margin-top: 930px;
+            margin-left: 430px;
+            font-size: 16px;
         }
         .tabelinha{
             width: 60%;
