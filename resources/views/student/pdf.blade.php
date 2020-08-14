@@ -35,17 +35,19 @@
         }
         .data_realizacao{
             position: absolute;
-            margin-top: 592.5px;
-            margin-left: 508px;
+            margin-top: 591.6px;
+            margin-left: 490px;
             font-size: 13.8px;
             /* font-weight: 900; */
         }
         .coordenador{
             position: absolute;
             margin-top: 723px;
-            margin-left: 135px;
+            margin-left: 133px;
             font-size: 16px;
             font-weight: bold;
+            text-align: center;
+            line-height: 20px;
         }
         .data_emissao{
         position: absolute;
@@ -61,27 +63,27 @@
         }
         .assunto{
             position: absolute;
-            margin-top: 910px;
+            margin-top: 885px;
             margin-left: 430px;
-            font-size: 16px;
+            font-size: 13px;
         }
         .periodo_realizacao{
             position: absolute;
-            margin-top: 930px;
+            margin-top: 905px;
             margin-left: 430px;
-            font-size: 16px;
+            font-size: 13px;
         }
         .tabelinha{
-            width: 60%;
+            width: 75%;
             position: absolute;
-            margin-top: 990px;
+            margin-top: 940px;
             margin-left: 80px;  
         }
         .qrcode{
             position: absolute;
-        margin-top: 1392px;
-        margin-left: 170px;
-        font-size: 16px;
+        margin-top: 1490px;
+        margin-left: 1010px;
+        font-size: 15px;
         }
         .sign{
             position: absolute;
@@ -96,6 +98,10 @@
             margin-left: 673px;
             float: left;
         }
+        .fonte{
+            font-size: 12px;
+            line-height: 12px;
+        }
     </style>
 </head>
 <body>
@@ -108,13 +114,13 @@
     </div>   
     <p class="data_realizacao">{{ \App\Student::dateFormat($certificate->course->realization_date) }} num total de {{ $certificate->course->class_hours }} horas aulas.</p>  
     <img src="{{ url("storage/{$certificate->course->sign}") }}" alt="" class="sign">
-    <p class="coordenador"> {{ $certificate->course->coordinator }} </p>   
+    <p class="coordenador"> {{ $certificate->course->coordinator }} <br>Coordenador do Curso</p>   
     <p class="data_emissao">Porto Alegre, {{ \App\Student::dateFormat($certificate->created_at) }}</p>   
     {{-- <p class="palestrante">Palestrante: {{ $certificate->course->speaker }} </p>    --}}
     <p class="assunto">{{ $certificate->course->lecture }}</p>   
     <p class="periodo_realizacao">Periodo de realização: {{  \App\Student::dateFormat($certificate->course->realization_date) }}</p>
 
-    <table class="table tabelinha">
+    <table class="table tabelinha fonte">
         <thead>
             <th>Instrutor(a)</th>
             <th>Disciplina</th>
@@ -133,9 +139,9 @@
         </tbody>
     </table>
     <p class="qrcode">    
-        {!! QrCode::size(150)->generate('https://faculdadesogipa.edu.br/redacao/'.$certificate->validation_code); !!}
+        {!! QrCode::size(100)->generate('https://faculdadesogipa.edu.br/redacao/'.$certificate->validation_code); !!}
         <br>
-        <span style="font-size: 10px;">https://faculdadesogipa.edu.br/redacao/{{ $certificate->validation_code }}</span>
+        <span style="font-size: 10px; margin-left: -290px;">https://faculdadesogipa.edu.br/redacao/{{ $certificate->validation_code }}</span>
     </p>
     <img src="{{ url("storage/{$certificate->sponsors}") }}" alt="" class="sponsors">
     <img src="{{ asset('img/certificado-frente.jpg') }}" alt="">

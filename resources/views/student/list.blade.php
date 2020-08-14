@@ -19,7 +19,7 @@
                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Aluno</th>
-                            <th scope="col">Data de Em issão</th>
+                            <th scope="col">Data de Emissão</th>
                             <th scope="col">Palestrante</th>
                             <th scope="col">Assunto Abordado</th>
                             <th scope="col">Ações</th>
