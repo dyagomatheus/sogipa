@@ -139,9 +139,9 @@
         </tbody>
     </table>
     <p class="qrcode">    
-        {!! QrCode::size(100)->generate('https://faculdadesogipa.edu.br/redacao/'.$certificate->validation_code); !!}
+        {!! QrCode::size(100)->generate('https://faculdadesogipa.edu.br/redacao/certificate/validate/'.$certificate->validation_code); !!}
         <br>
-        <span style="font-size: 10px; margin-left: -290px;">https://faculdadesogipa.edu.br/redacao/{{ $certificate->validation_code }}</span>
+        <span style="font-size: 10px; margin-left: -290px;">https://faculdadesogipa.edu.br/redacao/certificate/validate/{{ $certificate->validation_code }}</span>
     </p>
     <img src="{{ url("storage/{$certificate->sponsors}") }}" alt="" class="sponsors">
     <img src="{{ asset('img/certificado-frente.jpg') }}" alt="">
