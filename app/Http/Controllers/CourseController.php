@@ -27,7 +27,7 @@ class CourseController extends Controller
     public function index()
     {
         if(auth()->user()->type == 1){
-            $courses = Course::paginate();
+            $courses = Course::get();
             return view('course.list', compact('courses'));
         }else{
             return view('home');

@@ -28,7 +28,7 @@ class StudentController extends Controller
     public function index()
     {
         if(auth()->user()->type == 1){
-            $students = Student::paginate();
+            $students = Student::get();
             return view('student.list', compact('students'));
         }else{
             return view('home');

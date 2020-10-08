@@ -28,7 +28,7 @@ class VerseController extends Controller
     public function index()
     {
         if(auth()->user()->type == 1){
-            $verses = Verse::paginate();
+            $verses = Verse::get();
             return view('verse.list', compact('verses'));
         }else{
             return view('home');
