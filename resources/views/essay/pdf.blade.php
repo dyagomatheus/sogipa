@@ -17,7 +17,7 @@
         Transferência de Mantença nº 47 de 26/01/2018, DOU de 29/01/2018<br>
         Mantida pela Faculdades Integradas de Foz do Iguaçu - FAMERCO<br>
         <br><br>
-        <strong style="font-family: Arial !important; font-size: 14px">PROCESSO SELETIVO 2020/2</strong><br>
+        <strong style="font-family: Arial !important; font-size: 14px">PROCESSO SELETIVO 2021/1</strong><br>
         <strong style="font-family: Arial !important; font-size: 14px">TEXTO SELECIONADO: {{$essay->text}}</strong>
 
         <br>

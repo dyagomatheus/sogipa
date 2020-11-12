@@ -11,8 +11,8 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="{{route('course.create')}}">Cadastrar Curso</a>
           <a class="dropdown-item" href="{{route('course.index')}}">Listar Cursos</a>
-          <a class="dropdown-item" href="{{route('verse.create')}}">Cadastrar Instrutor</a>
-          <a class="dropdown-item" href="{{route('verse.index')}}">Listar Instrutores</a>
+          <a class="dropdown-item" href="{{route('verse.create')}}">Cadastrar Professor</a>
+          <a class="dropdown-item" href="{{route('verse.index')}}">Listar Professores</a>
           <a class="dropdown-item" href="{{route('student.create')}}">Cadastrar Certificado</a>
           <a class="dropdown-item" href="{{route('student.index')}}">Listar Certificados</a>
         </div>

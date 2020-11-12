@@ -9,7 +9,7 @@
         <link rel="http://faculdadesogipa.edu.br/shortcut icon" href="http://faculdadesogipa.edu.br/assets/img/favicon.png" />
 		<link href="http://faculdadesogipa.edu.br/assets/css/master.css" rel="stylesheet">
 
-<script src="http://faculdadesogipa.edu.br/assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="http://faculdadesogipa.edu.br/assets//plugins/jquery/jquery-1.11.3.min.js"></script>
 
 </head>
 
@@ -69,7 +69,7 @@ border-radius: 100px;float: left">
       
       <div class="container">
         <div class="row">
-          <div class="col-xs-12"> <a class="header-logo" href="index.php"><img class="header-logo__img" src="http://faculdadesogipa.edu.br/assets/img/logo.png" height="66" width="111" alt="Logo"></a>
+          <div class="col-xs-12"> <a class="header-logo" href="http://www.faculdadesogipa.edu.br/index.php"><img class="header-logo__img" src="http://faculdadesogipa.edu.br/assets/img/logo.png" height="66" width="111" alt="Logo"></a>
             <div class="header-inner">
              
               <nav class="navbar yamm">
@@ -78,13 +78,13 @@ border-radius: 100px;float: left">
                 </div>
                 <div id="navbar-collapse-1" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.php">Home<span class="nav-subtitle">Início</span></a></li>
-                    <li> <a href="institucional.php">Institucional<span class="nav-subtitle">Institucional</span></a> </li>
+                    <li><a href="http://www.faculdadesogipa.edu.br/index.php">Home<span class="nav-subtitle">Início</span></a></li>
+                    <li> <a href="http://www.faculdadesogipa.edu.br/institucional.php">Institucional<span class="nav-subtitle">Institucional</span></a> </li>
                     <li class="dropdown"> <a href="javascript:void(0);">Graduação<span class="nav-subtitle">Ver cursos</span></a>
                       <ul role="menu" class="dropdown-menu" style="display: none;">
-                        <li><a href="detalhe-curso-graduacao-educacao-fisica.php">Educação Física</a></li>
-                        <li><a href="detalhe-curso-graduacao-fisioterapia.php">Fisioterapia</a></li>
-                        <li><a href="detalhe-curso-graduacao-nutricao.php">Nutrição</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-graduacao-educacao-fisica.php">Educação Física</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-graduacao-fisioterapia.php">Fisioterapia</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-graduacao-nutricao.php">Nutrição</a></li>
                       </ul>
                     </li>
                    <!--<li class="dropdown"> <a href="javascript:void(0);">Pós Graduação<span class="nav-subtitle">Ver cursos</span></a>-->
@@ -96,32 +96,33 @@ border-radius: 100px;float: left">
                     </li>
                     <li class="dropdown"> <a href="javascript:void(0);">Extensão<span class="nav-subtitle">Ver cursos</span></a>
                       <ul role="menu" class="dropdown-menu" style="display: none;">
-                        <li><a href="detalhe-curso-extensao-gestao-no-futebol-3x1.php">Gestão no Futebol 3 em 1</a></li>
-                        <li><a href="detalhe-curso-extensao-adaptacao-funcional.php">Adaptação funcional: do treinamento à lesão</a></li>
-                        <li><a href="detalhe-curso-extensao-futebol-feminino-treinamento-e-desempenho.php">Futebol feminino: Treinamento e desempenho esportivo</a></li>
-                        <li><a href="detalhe-curso-extensao-exercicio-fisico-para-criancas.php">Exercício físico para crianças: Saúde e desempenho</a></li>
-                        <li><a href="detalhe-curso-extensao-metodologia-de-treino-do-tecnico-da-selecao-brasileira-de-futsal.php">Metodologia de Treino do Técnico da Seleção Brasileira de Futsal</a></li>
-                        <li><a href="detalhe-curso-extensao-psicologia-do-esporte.php">Curso de formação em Psicologia do Esporte</a></li>
-                        <li><a href="detalhe-curso-extensao-estrategias-para-melhora-do-desempenho-do-esporte.php">Estratégias para melhora do desempenho do esporte</a></li>
-                        <li><a href="projeto-danca.php">Projeto dança</a></li>
-                        <li><a href="seer.php">SEER</a></li>
+                        <li><a href="http://faculdadesogipa.edu.br/redacao/solicitacao-certificado"><b>Receba aqui seu certificado</b></a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-gestao-no-futebol-3x1.php">Gestão no Futebol 3 em 1</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-adaptacao-funcional.php">Adaptação funcional: do treinamento à lesão</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-futebol-feminino-treinamento-e-desempenho.php">Futebol feminino: Treinamento e desempenho esportivo</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-exercicio-fisico-para-criancas.php">Exercício físico para crianças: Saúde e desempenho</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-metodologia-de-treino-do-tecnico-da-selecao-brasileira-de-futsal.php">Metodologia de Treino do Técnico da Seleção Brasileira de Futsal</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-psicologia-do-esporte.php">Curso de formação em Psicologia do Esporte</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/detalhe-curso-extensao-estrategias-para-melhora-do-desempenho-do-esporte.php">Estratégias para melhora do desempenho do esporte</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/projeto-danca.php">Projeto dança</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/seer.php">SEER</a></li>
                       </ul>
                     </li>
 
                     <li> <a href="javascript:void(0);">Biblioteca<span class="nav-subtitle">Saiba mais</span></a>
                      <ul role="menu" class="dropdown-menu" style="display: none;">
-                      <li><a href="biblioteca.php">Informações</a></li>
+                      <li><a href="http://www.faculdadesogipa.edu.br/biblioteca.php">Informações</a></li>
                       </ul></li>
 
                      <li> <a href="javascript:void(0);">Vestibular<span class="nav-subtitle">Increva-se</span></a>
                      <ul role="menu" class="dropdown-menu" style="display: none;">
-                      <li><a href="vestibular.php">Inscreva-se</a></li>
-                        <li><a href="vestibular-aprovados.php">Aprovados</a></li>
+                      <li><a href="http://www.faculdadesogipa.edu.br/vestibular.php">Inscreva-se</a></li>
+                        <li><a href="http://www.faculdadesogipa.edu.br/vestibular-aprovados.php">Aprovados</a></li>
                       </ul></li>
 
-                       <li> <a href="seja-conveniado.php">Conveniados<span class="nav-subtitle">Seja conveniado</span></a></li>
+                       <li> <a href="http://www.faculdadesogipa.edu.br/seja-conveniado.php">Conveniados<span class="nav-subtitle">Seja conveniado</span></a></li>
                     
-                    <li> <a href="contato.php">Contato<span class="nav-subtitle">Fale conosco</span></a></li>
+                    <li> <a href="http://www.faculdadesogipa.edu.br/contato.php">Contato<span class="nav-subtitle">Fale conosco</span></a></li>
                   </ul>
                 </div>
               </nav>
@@ -142,7 +143,7 @@ border-radius: 100px;float: left">
 				<div class="wrap-title-page">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12"><h1 class="ui-title-page">Solicitação de certificado</h1></div>
+							<div class="col-xs-12"><h1 class="ui-title-page">Certificado de Extensão</h1></div>
 						</div>
 					</div><!-- end container-->
 				</div><!-- end wrap-title-page -->
@@ -155,7 +156,7 @@ border-radius: 100px;float: left">
 								<div class="wrap-breadcrumb clearfix">
 									<ol class="breadcrumb">
 										<li><a href="index.php"><i class="icon fa fa-home"></i></a></li>
-										<li class="active">Solicitação de certificado</li>
+										<li class="active">Certificado de Extensão</li>
 									</ol>
 								</div>
 							</div>
@@ -176,7 +177,7 @@ border-radius: 100px;float: left">
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-12">
-									<h2 class="ui-title-block"><font color="#FF0000">Solicite aqui seu Certificado de <strong>Extensão</strong>.</font></h2>
+									<h2 class="ui-title-block"><font color="#FF0000">Retire aqui seu Certificado de <strong>Extensão</strong>.</font></h2>
 									<div class="wrap-subtitle">
 										<div class="ui-subtitle-block ui-subtitle-block_w-line">Informe seu CPF abaixo e receba seu certificado caso esteja apto.</div>
 									</div><!-- end wrap-title -->
@@ -247,17 +248,17 @@ border-radius: 100px;float: left">
               <section class="footer-section">
                 <h3 class="footer-title">Institucional</h3>
                 <ul class="footer-list list-unstyled">
-                  <li class="footer-list__item"><a class="footer-list__link" href="institucional.php">Sobre a Faculdade</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/institucional.php">Sobre a Faculdade</a></li>
                   <!--<li class="footer-list__item"><a class="footer-list__link" href="equipe.php">Equipe</a></li>-->
                   <!--<li class="footer-list__item"><a class="footer-list__link" href="noticias.php">Notícias</a></li>-->
-                  <li class="footer-list__item"><a class="footer-list__link" href="mural-de-campeoes.php">Mural de campeões</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="formas-de-ingresso-diplomados.php">Formas de ingresso</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="nap.php">NAP (Núcleo de Apoio Psicopedagógico)</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="localizacao.php">Localização</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="trabalhe-conosco.php">Trabalhe conosco</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="ouvidoria.php">Ouvidoria</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="seja-conveniado.php">Seja conveniado</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="contato.php">Contato</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/mural-de-campeoes.php">Mural de campeões</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/formas-de-ingresso-diplomados.php">Formas de ingresso</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/nap.php">NAP (Núcleo de Apoio Psicopedagógico)</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/localizacao.php">Localização</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/trabalhe-conosco.php">Trabalhe conosco</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/ouvidoria.php">Ouvidoria</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/seja-conveniado.php">Seja conveniado</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/contato.php">Contato</a></li>
                 </ul>
               </section>
               <!-- end footer-section -->  
@@ -268,10 +269,10 @@ border-radius: 100px;float: left">
               <section class="footer-section">
                 <h3 class="footer-title">Cursos</h3>
                 <ul class="footer-list list-unstyled">
-                  <li class="footer-list__item"><a class="footer-list__link" href="cursos-graduacao.php">Graduação</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="cursos-pos-graduacao.php">Pós-Graduação</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="cursos-extensao.php">Extensão</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link" href="vestibular.php">Vestibular</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/cursos-graduacao.php">Graduação</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/cursos-pos-graduacao.php">Pós-Graduação</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/cursos-extensao.php">Extensão</a></li>
+                  <li class="footer-list__item"><a class="footer-list__link" href="http://www.faculdadesogipa.edu.br/vestibular.php">Vestibular</a></li>
                 </ul>
               </section>
               <!-- end footer-section --> 
