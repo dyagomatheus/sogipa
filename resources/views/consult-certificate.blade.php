@@ -5,11 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 		<title>FACULDADE SOGIPA - Solicitação de certificado</title>
-		<link href="http://faculdadesogipa.edu.br/favicon.png" type="image/x-icon" rel="shortcut icon">
-        <link rel="http://faculdadesogipa.edu.br/shortcut icon" href="http://faculdadesogipa.edu.br/assets/img/favicon.png" />
-		<link href="http://faculdadesogipa.edu.br/assets/css/master.css" rel="stylesheet">
+		<link href="https://faculdadesogipa.edu.br/favicon.png" type="image/x-icon" rel="shortcut icon">
+        <link rel="https://faculdadesogipa.edu.br/shortcut icon" href="http://faculdadesogipa.edu.br/assets/img/favicon.png" />
+		<link href="https://faculdadesogipa.edu.br/assets/css/master.css" rel="stylesheet">
 
-<script src="http://faculdadesogipa.edu.br/assets//plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="https://faculdadesogipa.edu.br/assets//plugins/jquery/jquery-1.11.3.min.js"></script>
 
 </head>
 
@@ -118,6 +118,12 @@ border-radius: 100px;float: left">
                      <ul role="menu" class="dropdown-menu" style="display: none;">
                       <li><a href="http://www.faculdadesogipa.edu.br/vestibular.php">Inscreva-se</a></li>
                         <li><a href="http://www.faculdadesogipa.edu.br/vestibular-aprovados.php">Aprovados</a></li>
+                      </ul></li>
+
+                      <li> <a href="javascript:void(0);">Certificado<span class="nav-subtitle">Extensão</span></a>
+                     <ul role="menu" class="dropdown-menu" style="display: none;">
+                      <li><a href="https://faculdadesogipa.edu.br/solicitacao-certificado.php">Solicitação</a></li>
+                        <li><a href="http://faculdadesogipa.edu.br/redacao/solicitacao-certificado">Emissão</a></li>
                       </ul></li>
 
                        <li> <a href="http://www.faculdadesogipa.edu.br/seja-conveniado.php">Conveniados<span class="nav-subtitle">Seja conveniado</span></a></li>

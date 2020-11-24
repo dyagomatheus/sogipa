@@ -47,7 +47,7 @@
                             </div>
                             <div class="form-group col-6 mt-2">
                                 <label for="">Horas Aulas</label>
-                                <input type="number" value="{{ $course->class_hours }}" name="class_hours" class="form-control">
+                                <input type="text" value="{{ $course->class_hours }}" name="class_hours" class="form-control">
                             </div>
                             <div class="form-group col-6 mt-2">
                                 <label for="">Coordenador</label>
