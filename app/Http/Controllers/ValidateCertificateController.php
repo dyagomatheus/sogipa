@@ -27,7 +27,7 @@ class ValidateCertificateController extends Controller
        $certificate = Student::where('validation_code', $code)->first();
 
        if($certificate){
-           return view('student.validate', compact('certificate'));
+           return view('student.pdf', compact('certificate'));
         }else{
             return view('student.no_validate');
         }
@@ -91,10 +91,10 @@ class ValidateCertificateController extends Controller
 
     public function viewCertificate(Request $request)
     {
-        $certificate = Student::where('cpf', $request->cpf)->first();
+        $certificates = Student::where('cpf', $request->cpf)->get();
 
-        if($certificate){
-            return view('student.pdf', compact('certificate'));
+        if($certificates){
+            return view('show-certificates', compact('certificates'));
          }else{
              return view('student.no_validate');
          }
